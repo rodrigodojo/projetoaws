@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class testController {
     private static final Logger LOG = LoggerFactory.getLogger(testController.class);
 
-    @GetMapping("/dog/name")
+    @GetMapping("/dog/{name}")
     public ResponseEntity<?> dogTest(@PathVariable String name){
         LOG.info("Teste de controler - name : {}", name);
 
